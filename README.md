@@ -1,24 +1,20 @@
 #What is Greta
-Greta decentralizes data distribution, just as internet was once intended. Smarter for users, smarter for distributors.
+Greta decentralizes data distribution, just as internet was once intended. It's pure JS and works on top of any hosting and distribution solution you might be using today. Greta uses webRTC to distribute data directly between concurrent users of a service or site, which means no servers are used to distribute the data. Use Greta by simply including the standard script or customize after your specific needs. All data distributed in Greta’s network is safely encrypted.
 
-Internet is rapidly expanding, with heavy data that needs to be distributed between billions of people, devices, houses, streets and vehicles in all parts of the world.
+Greta always fallbacks to your current CDN or server solution if the algorithm estimates that is more appropriate for your end users – for example if someone is on a desert island or have a metered connection. Should something, against all odds, go wrong – the worst thing that can happen is that we fallback to your existing distribution solution.
 
-By making data distribution easy and accessible to anyone, we intend to keep internet the home of new ideas and equal opportunities.
-
-Use Greta by simply including the standard script or customize after your specific needs.
+If you want more information, check our documentation: [https://greta.io/documentation](https://greta.io/documentation)
 
 #How to register
 
-This examples will work as is but if you like to use it on your own page or get access to the very nice dashboard please signup for a account over here: [Register here](https://app.greta.io/signup)
+These examples will work regardless if you have a Greta account or not. However, signing up is free and you can then use Greta for your own page as well as get analytics from our real time dashboard. Get your Greta script here: [https://app.greta.io/signup](https://app.greta.io/signup)
 
-#How to run examples
-You will need a web server running on your local machine or a server to make the examples work.
+#How to run the examples
+First of all you need a web server running on your local machine, as some of the JS functions used are not allowed on file:// you will need to access the examples over http:// or https://
 
-This is because some of the Javascript functions used is not allowed on file:// So you will need to access them over http:// or https://
+If you already have a web server running, just make sure to put the examples in the right directory or point the server to the right place.
 
-If you have a web server running just make sure to put the examples in the right directory or point the server to the right place.
-
-If you do not have a web sever running we have put together some examples to get you started.
+If you do not have a web sever running yet, we have some quick ones you could use:
 
 ###Using python:
 ```
@@ -37,10 +33,6 @@ http-server
 ```
 Go to [http://localhost:8080/](http://localhost:8080/)
 
-#Documentation
-
-To read more documentation about how Greta work please head over to our [documentation](https://greta.io/documentation)
-
 #Support
 
-We love to hear from all of you! Please join the discussion on [Slack](https://slack.greta.io) or send a [support ticet](https://greta.io/support)
+You can get in contact with us on [Slack](https://slack.greta.io) or send a [support ticket](https://greta.io/support) with any questions you have!
