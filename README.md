@@ -1,5 +1,3 @@
-This a collection of examples of how to use Greta!
-
 #What is Greta
 Greta decentralizes data distribution, just as internet was once intended. Smarter for users, smarter for distributors.
 
