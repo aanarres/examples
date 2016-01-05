@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Exampel for Greta.io</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" src="https://cdn.greta.io/jwplayer_shaka_greta.js"></script>
+  <script type="text/javascript" id="gretaScript" src="https://cdn.greta.io/greta.min.js" data-ac="233092b273186fee3c440f876d1cb59f"></script>
+
+  <script>
+    GRETA_DEBUG = true;
+  </script>
+</head>
+
+<body>
+  <div id='container'></div>
+  <script>
+    jwplayer.key = 'LJu3LqXr6x1yi4MI'
+
+    player = jwplayer('container').setup({
+      playlist: [{
+        file: "https://storage.googleapis.com/gretavideo/86570_06b08913f91d65c9c76147dda70edeb4/86570.mpd",
+        title: "DASH sample stream",
+        description: "This is a DASH stream!",
+        image: "img/poster.png",
+        type: "dash"
+      }],
+      key: "r2ZdqLK4k6J9GE321+KGQrEHWI7Dw02Sp3lICw==",
+      dash: 'shaka',
+      skin: {
+        //active:"",
+        name: "seven"
+          //inactive:""
+      },
+      width: "100%",
+      aspectratio: "16:9",
+      ga: {},
+      autostart: false
+    });
+  </script>
+</body>
+
+</html>
