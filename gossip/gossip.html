@@ -1,0 +1,39 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Exampel for Greta.io</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" id="gretaScript" src="https://cdn.greta.io/greta.min.js" data-ac="233092b273186fee3c440f876d1cb59f"></script>
+
+  <script>
+    GRETA_DEBUG = true;
+  </script>
+</head>
+
+<body>
+
+  <div id="container"></div>
+
+  <script>
+    greta.gossip.on('myEvent', function(data) {
+      var el = document.getElementById('container');
+      el.innerText = data.message;
+    });
+
+    window.setTimeout(function() {
+      greta.gossip.broadcast([{
+        event: 'myEvent',
+        data: {
+          message: 'DONE ' +  new Date().getTime()
+        }
+      }])
+    }, 2000);
+  </script>
+</body>
+
+</html>
