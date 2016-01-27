@@ -1,0 +1,38 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Exampel for Greta.io</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="//ssl.p.jwpcdn.com/player/v/7.1.5/jwplayer.js"></script>
+  <script src="https://cdn.greta.io/hls_greta.js"></script>
+  <script type="text/javascript" id="gretaScript" src="https://betacdn.greta.io/greta.min.js" data-ac="233092b273186fee3c440f876d1cb59f"></script>
+
+  <script>
+    GRETA_DEBUG = true;
+  </script>
+</head>
+
+<body>
+
+  <div id='container'></div>
+
+  <script>
+    jwplayer.key = 'r2ZdqLK4k6J9GE321+KGQrEHWI7Dw02Sp3lICw=='
+
+    jwplayer('container').setup({
+      playlist: {
+        sources: [{
+          file: "https://storage.googleapis.com/gretavideo/86570_06b08913f91d65c9c76147dda70edeb4/86570.m3u8"
+        }],
+      },
+      autostart: 0
+    });
+  </script>
+</body>
+
+</html>
