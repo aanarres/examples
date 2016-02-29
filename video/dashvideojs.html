@@ -17,16 +17,14 @@
 </head>
 
 <body>
-  <video id="videoId"></video>
-  <script>
-    greta.play({
-      type: "videojs.dash",
-      url: "https://storage.googleapis.com/gretavideo/86570_06b08913f91d65c9c76147dda70edeb4/86570.mpd",
-      playerId: "videoId",
-      autoPlay: true,
-      live: false
-    }, function(player) {
+  <video id="videoId">
+    <source type="application/dash+xml" src="https://storage.googleapis.com/gretavideo/86570_06b08913f91d65c9c76147dda70edeb4/86570.mpd"></source>
+  </video>
 
+  <script>
+    var player = videojs("videoId", {
+      "context": new Dash.di.DashContext(),
+      "autoplay": true
     });
   </script>
 </body>
